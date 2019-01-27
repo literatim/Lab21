@@ -1,0 +1,12 @@
+﻿@model Lab21.Models.Person
+
+@{
+    ViewBag.Title = "RegistrationSuccess";
+}
+<br/>
+<div>
+    @foreach (var name in Model)
+    {
+        <p>Welcome, @Html.DisplayFor(modelName => name.FirstName)</p>
+    }
+</div>
