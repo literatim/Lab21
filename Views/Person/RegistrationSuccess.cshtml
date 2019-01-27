@@ -5,8 +5,5 @@
 }
 <br/>
 <div>
-    @foreach (var name in Model)
-    {
-        <p>Welcome, @Html.DisplayFor(modelName => name.FirstName)</p>
-    }
+    <p>Welcome, @ViewBag.NewPersonFirstName.</p>
 </div>

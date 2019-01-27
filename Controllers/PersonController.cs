@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Lab21.DAL;
 using Lab21.Models;
 
@@ -30,6 +31,7 @@ namespace Lab21.Controllers
 
         public ActionResult RegistrationSuccess()
         {
+            ViewBag.FirstName = _context.Person.Last(f => f.FirstName);
             return View();
         }
     }
